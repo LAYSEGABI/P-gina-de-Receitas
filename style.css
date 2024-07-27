@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lg-background-color: #573824;
+    --lg-surface-color: #F0e8c2;
+    --lg-text-color-on-bg: #F0e8c2;
+    --lg-text-color-primary: #291b1a;
+    --lg-text-color-secundary: #573a37;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    gap: 30px;
+    background: url('img/bg-image.png');
+    background-color: rgb(42, 32, 59);
+    font-family: 'Alice', sans-serif;
+    color: var(--lg-text-color-primary);
+}
+
+main {
+    width: 60%;
+    background-color: var(--lg-surface-color);
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+main img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.descricao li {
+    list-style-type: none;
+}
+
+.ingredientes {
+    margin: 1em 0;
+}
+
+.ingredientes ul {
+    padding: .5em 2em;
+}
+
+.modoPreparo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape {
+    color: var(--lg-text-color-on-bg);
+    opacity: .8;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    main {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 1.5em;
+    }
+
+    main {
+        width: 100%;
+        padding: 1em;
+    }
+}
